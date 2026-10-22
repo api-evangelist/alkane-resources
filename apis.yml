@@ -1,23 +1,85 @@
 aid: alkane-resources
+
 name: Alkane Resources
-description: 'Alkane Resources is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2023/04/DJI_0018-LR.jpg
+
+description: 'Alkane Resources Ltd (ASX: ALK, TSX: ALK, OTCQX: ALKRY) is an Australian gold and antimony producer headquartered in West
+  Perth, Western Australia, operating three mines: the Tomingley gold mine in Central West New South Wales, the Costerfield gold-antimony
+  operation in Central Victoria and the Björkdal gold mine in Sweden (the latter two added by its August 2025 merger with Mandalay Resources),
+  and holding the Boda-Kaiser gold-copper project in New South Wales. Its site alkres.com publishes corporate, management, investor
+  news, privacy and terms pages; no public developer API, documentation or developer portal was found.'
+
 url: https://raw.githubusercontent.com/api-evangelist/alkane-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Antimony
+- Australia
+- Natural Resources
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/alkane-resources-hosts.yml
+- type: DomainSecurity
+  url: security/alkane-resources-domain-security.yml
 - type: Website
-  url: https://alkane.com.au/
+  url: https://alkres.com/
+- type: Leadership
+  url: https://alkres.com/about/management/
+- type: Newsroom
+  url: https://alkres.com/news-media/news/
+- type: PrivacyPolicy
+  url: https://alkres.com/privacy/
+- type: TermsOfService
+  url: https://alkres.com/terms/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-established
+  detail: https://alkane.com.au/ answers HTTP 302 to https://alkres.com/, the company's current domain (its releases list alkres.com
+    and info@alkres.com). alkres.com and its footer pages returned 200 to the 2026-10-21 pre-flight probe; from this agent the host
+    timed out. No API, developer docs or portal is published.
+  evidence:
+  - url: https://alkane.com.au/
+    status: 302
+  - url: https://alkres.com/
+    status: 200
+  - url: https://alkres.com/privacy/
+    status: 200
+  - url: https://alkres.com/terms/
+    status: 200
+  - url: https://alkres.com/about/management/
+    status: 200
+  - url: https://alkres.com/news-media/news/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

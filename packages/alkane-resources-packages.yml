@@ -1,0 +1,12 @@
+name: Alkane Resources packages
+generated: '2026-10-21'
+method: none
+note: No first-party SDK or client library exists; the company publishes no API. Registry lookups for the name returned 404.
+checked:
+- url: https://registry.npmjs.org/alkane-resources
+  status: 404
+- url: https://pypi.org/pypi/alkane-resources/json
+  status: 404
+- url: https://rubygems.org/api/v1/gems/alkane-resources.json
+  status: 404
+packages: []

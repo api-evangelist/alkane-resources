@@ -1,0 +1,19 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/alkane-resources/integrations
+- https://n8n.io/integrations/alkane-resources/
+- https://composio.dev/toolkits/alkane-resources
+- https://monid.ai/tools/alkane-resources
+checked:
+- https://zapier.com/apps/alkane-resources/integrations
+- https://alkres.com/
+- https://composio.dev/toolkits/alkane-resources
+- https://monid.ai/tools/alkane-resources
+- https://n8n.io/integrations/alkane-resources/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Alkane Resources is an ASX/TSX-listed gold and antimony miner with no public API, developer portal or integrations
+  page. No marketplace listing or claimed partner integration was found.

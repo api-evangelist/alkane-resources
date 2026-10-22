@@ -1,0 +1,90 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://alkres.com/privacy/
+- https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+notes: >-
+  Alkane Resources Ltd is an ASX-listed gold/minerals miner, not an API provider. Its website privacy
+  statement (alkres.com/privacy, 200) links to the full Privacy Policy PDF hosted on the company's own
+  WordPress media bucket (wp-alkane-2023 S3, 200, "Last Approved 18 February 2025, Next Review February 2026").
+  Terms of use (alkres.com/terms, 200) cover investor disclaimers and third-party links only and speak to
+  none of the signals below. No AI, GPC, accessibility, SBOM or transparency-report language was found.
+documents:
+- url: https://alkres.com/privacy/
+  http_status: 200
+  fetched: '2026-10-21'
+- url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+  http_status: 200
+  fetched: '2026-10-21'
+  last_approved: '2025-02-18'
+- url: https://alkres.com/terms/
+  http_status: 200
+  fetched: '2026-10-21'
+signals:
+  data_subject_request:
+    url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+    section: '8. Accessing and Correcting Your Information'
+    channel: privacy@alkane.com.au (policy PDF); privacy@alkres.com (website statement)
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'You can request a copy of your personal information by contacting our Privacy Officer.'
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If your personal information is incorrect or outdated, you can request that we correct it. If we don’t agree with the change, we will explain why.'
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If unsatisfied with our response, you can escalate the matter to the Office of the Australian Information Commissioner (OAIC).'
+    note: >-
+      Access and correction rights (Australian Privacy Principles) via a named Privacy Officer, with a 30-day
+      complaint-resolution aim and OAIC escalation. Deletion and portability are not offered as requestable rights.
+  data_residency:
+    url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+    section: '6.1 Third-Party Disclosures; 7.2 Data Storage'
+    region: Australia
+    evidence:
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'We do not send personal information outside of Australia. We may share information with trusted third parties in Australia, including:'
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Personal information is stored securely with third-party providers in Australia who meet our data security standards.'
+    note: A stated Australia-only residency commitment for personal information, covering both storage and disclosure.
+  subprocessors:
+    url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+    section: '6.1 Third-Party Disclosures'
+    list_published: false
+    evidence:
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Service Providers: IT service providers, auditors, and environmental consultants who need access to certain information to support our operations.'
+    note: >-
+      Only categories of recipients are named; no named subprocessor list is published. The website statement
+      separately says "We do not share this information with third parties unless required by law."
+  data_retention:
+    url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+    section: '7.3 How Long We Keep Your Data'
+    evidence:
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'We retain personal information only for as long as necessary to fulfil the purpose for which it was collected or as required by law. Once no longer needed, we securely delete or destroy the information.'
+    note: Purpose-limited retention with secure destruction; no specific retention periods are stated.
+  incident_notification:
+    url: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+    section: '10. Data Breach Notification'
+    regime: Australia Notifiable Data Breaches (NDB) scheme
+    evidence:
+    - source: https://wp-alkane-2023.s3.ap-southeast-2.amazonaws.com/media/2025/07/Alkane-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If the breach risks serious harm to you, we will notify you and the Office of the Australian Information Commissioner (OAIC) as soon as possible.'
+    note: Commits to individual and regulator notification under the NDB scheme; no fixed hour/day window is given ("as soon as possible").

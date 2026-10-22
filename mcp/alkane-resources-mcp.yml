@@ -1,0 +1,25 @@
+name: Alkane Resources MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+description: >-
+  No official MCP server (remote or local) from Alkane Resources was found, and the
+  provider publishes no OpenAPI or other API contract from which a candidate tool list
+  could be derived. Alkane Resources (ASX/TSX: ALK) is a gold and antimony producer
+  whose site alkres.com offers corporate and investor pages only.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://alkres.com/llms.txt
+  status: 404
+  note: no llms.txt / agent index on the company host
+- note: >-
+    Pre-flight contract discovery (2026-10-21) on alkane.com.au, alkres.com and
+    api.alkres.com reported mcp, openapi, asyncapi and graphql all absent.
+- note: >-
+    Web search 2026-10-21 for "Alkane Resources" MCP server / API developer returned
+    only unrelated generic MCP tooling.

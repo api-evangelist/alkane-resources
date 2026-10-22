@@ -1,0 +1,57 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: alkane.com.au
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: alkane.com.au
+  role: other
+  relation: other-domain
+- host: alkres.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Leadership
+  - Newsroom
+  - PrivacyPolicy
+  - TermsOfService
+  serves: []
+  registrable_domain: alkres.com
+  role: website
+  relation: own
+- host: api.alkres.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: alkres.com
+  role: api
+  relation: own
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
